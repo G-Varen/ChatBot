@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main class="container pt-5 d-flex justify-content-center">
+        <div class=" d-flex align-items-center rounded" style="width: 400px; height: 600px;">
+            <div class="chatBox rounded d-flex flex-column justify-content-beetwen bg-light">
+
+                <h2 class="rounded-top fs-4" onclick="opened()"> Chat with Robot</h2>
+
+                <div class="chatBody m-2 overflow-scroll " style="height: 85%; display: block;">
+                    <!-- <p class="rounded bg-white px-3 py-2 msgBox">Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Eius, tempore? </p>
+                        <img class="bg-white rounded-5 mb-2" src="images/dote.gif" alt="" style="width: 70px; height: 40px; object-fit: cover;">
+                    <div class="d-flex justify-content-end">
+                        <p class="rounded bg-primary text-white px-3 py-2 msgBox">
+                            Lorem ipsum dolor
+                            sit amet consectetur, adipisicing
+                            elit. Eius, tempore? </p>
+                    </div>
+                    <p class="rounded bg-white px-3 py-2 msgBox">Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Eius, tempore? </p> -->
+                </div>
+
+                <div class="chatInput p-3" style="display: block;">
+                    <form onsubmit="msgSend(event)" class="input-group flex-nowrap " style="height: 50px;">
+                        <input type="text" class="form-control" placeholder="Entrez votre message..."
+                            aria-label="Username" aria-describedby="addon-wrapping">
+                        <button class="btn btn-primary px-3 disabled" type="submit" id="addon-wrapping"><i
+                                class="bi bi-send-fill"></i></button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

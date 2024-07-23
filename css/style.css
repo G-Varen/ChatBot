@@ -1,0 +1,406 @@
+@font-face {
+    font-family: "bootstrap-icons";
+    src: url("../fonts/boostrap-font/bootstrap-icons.woff"), url("../fonts/boostrap-font/bootstrap-icons.woff2");
+}
+
+@font-face {
+    font-family: "Play-Bold";
+    src: url("../fonts/Play/Play-Bold.ttf"), sans-serif;
+}
+
+@font-face {
+    font-family: "Play-Reguar";
+    src: url("../fonts/Play/Play-Regular.ttf"), sans-serif;
+}
+
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url("../fonts/Poppins/Poppins-Regular.ttf"), sans-serif;
+}
+
+* {
+    font-family: "Poppins-Regular";
+    color: white;
+}
+
+p {
+    font-size: 0.8em;
+    opacity: 0.6;
+    letter-spacing: 1px;
+}
+
+:root {
+    --primary: #7D12FF;
+    --dark: #191825;
+}
+
+.bg-primary {
+    background-color: var(--primary) !important;
+}
+
+.color-primary {
+    color: var(--primary);
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover {
+    background-color: white;
+    color: var(--dark);
+    border-color: white;
+}
+
+.font-play {
+    font-family: "Play-Bold";
+}
+
+body {
+    background-color: var(--dark);
+    overflow-x: hidden;
+}
+
+.p-global {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.m-row {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.border-primary {
+    border-color: var(--primary) !important;
+}
+
+/* ------------------------------------------ HEADER SECTION -------------------------------- */
+
+
+.slide-overlay{
+    background-image: url("../images/slide.webp");
+    background-size: cover;
+    height: 100vh;
+}
+
+.overlay {
+    margin-top: -110px;
+    background-size: cover;
+    background:
+        linear-gradient(0deg, rgba(25, 24, 37, 1) 5%, rgba(25, 24, 37, 0) 25%),
+        linear-gradient(180deg, rgba(25, 24, 37, 1) 0%, rgba(25, 24, 37, 0) 25%),
+        linear-gradient(90deg, rgba(25, 24, 37, 1) 0%, rgba(25, 24, 37, 0.1) 50%);
+    height: 1080px;
+    z-index: 0;
+}
+
+h1 {
+    font-size: 5em;
+    line-height: 100%;
+}
+
+h1+p {
+    width: 50%;
+}
+
+.search-form input {
+    color: gray;
+}
+
+.search-form input:focus {
+    outline: 0 none;
+    caret-color: white;
+    color: white;
+}
+
+.search-form input::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+.profil-col {
+    width: 150px;
+    height: 150px;
+}
+
+/* ------------------------------------------ HEADER PROFIL -------------------------------- */
+.bg-card {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+.border-card {
+    background-image: radial-gradient(circle at 100% 100%, transparent 5px, #7d12ff3C 5px, #7d12ff3C 7px, transparent 7px), linear-gradient(to right, #7d12ff3C, #7d12ff3C), radial-gradient(circle at 0% 100%, transparent 5px, #7d12ff3C 5px, #7d12ff3C 7px, transparent 7px), linear-gradient(to bottom, #7d12ff3C, #ffffff3C), radial-gradient(circle at 0% 0%, transparent 5px, #ffffff3C 5px, #ffffff3C 7px, transparent 7px), linear-gradient(to left, #ffffff3C, #ffffff3C), radial-gradient(circle at 100% 0%, transparent 5px, #ffffff3C 5px, #ffffff3C 7px, transparent 7px), linear-gradient(to top, #ffffff3C, #7d12ff3C);
+    background-size: 7px 7px, calc(100% - 14px) 2px, 7px 7px, 2px calc(100% - 14px);
+    background-position: top left, top center, top right, center right, bottom right, bottom center, bottom left, center left;
+    background-repeat: no-repeat;
+}
+
+.profil {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid transparent;
+    background-image: radial-gradient(circle at 100% 100%, transparent 5px, #ffffff3C 5px, #ffffff3C 7px, transparent 7px), linear-gradient(to right, #ffffff3C, #ffffff3C), radial-gradient(circle at 0% 100%, transparent 5px, #ffffff3C 5px, #ffffff3C 7px, transparent 7px), linear-gradient(to bottom, #ffffff3C, #ffffff00), radial-gradient(circle at 0% 0%, transparent 5px, #ffffff00 5px, #ffffff00 7px, transparent 7px), linear-gradient(to left, #ffffff00, #ffffff00), radial-gradient(circle at 100% 0%, transparent 5px, #ffffff00 5px, #ffffff00 7px, transparent 7px), linear-gradient(to top, #ffffff00, #ffffff3C);
+    background-size: 7px 7px, calc(100% - 14px) 2px, 7px 7px, 2px calc(100% - 14px);
+    background-position: top left, top center, top right, center right, bottom right, bottom center, bottom left, center left;
+    background-repeat: no-repeat;
+}
+
+.profil .card-img-overlay {
+    top: auto !important;
+    padding-bottom: 0;
+    font-size: .8rem !important;
+}
+
+.profil .card-title {
+    font-size: .8rem !important;
+}
+
+/* ------------------------------------------ EXPLORE SECTION -------------------------------- */
+
+.explore-section {
+    position: relative;
+    width: auto;
+    height: 600px;
+    background-size: cover;
+    background-image: url("../images/cosmic-background.webp");
+    z-index: -1;
+}
+
+.explore-section::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background:
+        linear-gradient(0deg, rgba(25, 24, 37, 1) 0%, rgba(25, 24, 37, 0) 50%),
+        linear-gradient(180deg, rgba(25, 24, 37, 1) 20%, rgba(25, 24, 37, 0) 100%);
+    z-index: -1;
+    left: 0;
+    top: 0;
+}
+
+.expore-col {
+    width: 18rem;
+    height: 25rem;
+}
+
+.expore-icon {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    background-color: var(--primary), ;
+}
+
+.expore-icon::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: var(--primary);
+    left: 0;
+    top: 0;
+    filter: blur(12px);
+    opacity: 0.1;
+    border-radius: 50%;
+}
+
+/* ------------------------------------------ POPULAR GAMES SECTION -------------------------------- */
+
+.card-most-popular {
+    background-color: rgb(125, 18, 255, 0.2);
+}
+
+/* ------------------------------------------ CAROUSEL SECTION -------------------------------- */
+
+.carousel-indicators {
+    bottom: -70px;
+}
+
+.carousel-dark .carousel-indicators [data-bs-target] {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.carousel-indicators .active {
+    background-color: var(--primary) !important;
+    opacity: 1;
+    width: 40px
+}
+
+.carousel-caption {
+    position: absolute;
+    right: auto;
+    bottom: 5.0rem;
+    left: 63px;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: start;
+}
+
+.carousel-caption h2 {
+    font-size: 4em !important;
+    line-height: 0.7;
+}
+
+.carousel-img {
+    position: relative;
+    width: 1240px !important;
+    height: 450px;
+    z-index: -1;
+}
+
+.carousel-img::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, var(--dark) 0%, rgb(25, 24, 37, 0.1) 70%);
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+
+/* ------------------------------------------ RECOMMENDED SECTION -------------------------------- */
+
+.border-recommended {
+    background-image: radial-gradient(circle at 100% 100%, transparent 2px, #ffffff00 2px, #ffffff00 4px, transparent 4px), linear-gradient(to right, #ffffff00, #ffffff00), radial-gradient(circle at 0% 100%, transparent 2px, #ffffff00 2px, #ffffff00 4px, transparent 4px), linear-gradient(to bottom, #ffffff00, #ffffff3C), radial-gradient(circle at 0% 0%, transparent 2px, #ffffff3C 2px, #ffffff3C 4px, transparent 4px), linear-gradient(to left, #ffffff3C, #ffffff3C), radial-gradient(circle at 100% 0%, transparent 2px, #ffffff3C 2px, #ffffff3C 4px, transparent 4px), linear-gradient(to top, #ffffff3C, #ffffff00);
+    background-size: 4px 4px, calc(100% - 8px) 2px, 4px 4px, 2px calc(100% - 8px);
+    background-position: top left, top center, top right, center right, bottom right, bottom center, bottom left, center left;
+    background-repeat: no-repeat;
+}
+
+.recommended-section {
+    position: relative;
+    width: auto;
+    height: 600px;
+    background-size: cover;
+    background-image: url("../images/recommended-background.webp");
+    z-index: -1;
+}
+
+.recommended-section::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background:
+        linear-gradient(0deg, rgba(25, 24, 37, 1) 0%, rgba(25, 24, 37, 0) 50%),
+        linear-gradient(180deg, rgba(25, 24, 37, 1) 0%, rgba(25, 24, 37, 0) 100%);
+    z-index: -1;
+    left: 0;
+    top: 0;
+}
+
+.recommended-text {
+    position: absolute;
+    top: 140px;
+    right: 10%;
+    bottom: auto;
+    left: auto;
+    padding: var(--bs-card-img-overlay-padding);
+    border-radius: var(--bs-card-inner-border-radius);
+}
+
+.recommended-text h2 {
+    font-size: 3em !important;
+    width: 450px;
+}
+
+.news-form {
+    height: 80px;
+}
+
+.news-form div {
+    background-image: radial-gradient(circle at 100% 100%, transparent 2px, #7d12ff 2px, #7d12ff 4px, transparent 4px), linear-gradient(to right, #7d12ff, #ffffff), radial-gradient(circle at 0% 100%, transparent 2px, #ffffff 2px, #ffffff 4px, transparent 4px), linear-gradient(to bottom, #ffffff, #ffffff), radial-gradient(circle at 0% 0%, transparent 2px, #ffffff 2px, #ffffff 4px, transparent 4px), linear-gradient(to left, #ffffff, #7d12ff), radial-gradient(circle at 100% 0%, transparent 2px, #7d12ff 2px, #7d12ff 4px, transparent 4px), linear-gradient(to top, #7d12ff, #7d12ff);
+    background-size: 4px 4px, calc(100% - 8px) 2px, 4px 4px, 2px calc(100% - 8px);
+    background-position: top left, top center, top right, center right, bottom right, bottom center, bottom left, center left;
+    background-repeat: no-repeat;
+}
+
+.news-form-input {
+    color: gray;
+
+}
+
+.news-form-input:focus {
+    outline: none !important;
+    caret-color: white;
+    box-shadow: none;
+    color: white;
+}
+
+.news-form-input::placeholder {
+    color: white;
+    opacity: 0.2;
+}
+
+
+
+.link-footer a{
+    color: white;
+    opacity: 0.6;
+    letter-spacing: 1;
+}
+.link-footer a:hover{
+    color: var(--primary);
+    
+    opacity: 1;
+}
+.link-footer i:hover{
+    color: var(--primary);
+}
+
+/* --------------------------------------------- ANIMATAIONS --------------------------------------------- */
+.card, .carousel-inner{
+    animation: slide-top 1s;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: contain 50%;
+}
+@keyframes slide-top {
+    0% {
+              transform: scale(0);
+              opacity: 0;
+    }
+    100% {
+              transform: scale(1);
+              opacity: 1;
+    }
+  }
+
+
+main h2{
+    animation: tracking-in-contract 1s;
+    animation-timeline: view();
+    animation-range-start: cover 5%;
+    animation-range-end: contain 50%;
+}
+
+  @keyframes tracking-in-contract {
+    0% {
+      letter-spacing: 1em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      letter-spacing: normal;
+      opacity: 1;
+    }
+  }
+
+
+  /* --------------------------------------------------- MOBILE RESPONSIVE ---------------------------------------------------- */
+
+
+  @media only screen and (max-width: 768px){
+     .row>* {
+        flex-shrink: 0;
+        width: auto;
+    }
+    .popular-card .card-body{
+        margin: 40px;
+    }
+}
